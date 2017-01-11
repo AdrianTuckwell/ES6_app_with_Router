@@ -1,7 +1,7 @@
 import React from 'react'
-import About from './About.jsx'
-import Home from './Home.jsx'
-import Pricing from './Pricing.jsx'
+import Door1 from './Door1.jsx'
+import Door2 from './Door2.jsx'
+import Door3 from './Door3.jsx'
 import {Link} from 'react-router'
 
 class Main extends React.Component{
@@ -9,11 +9,21 @@ class Main extends React.Component{
   render(){
     return(
       <div>
-      <h4>C7 Website</h4>
+      <h4>Pick a Door</h4>
+
       <ul>
-        <li> <Link to='/home'>Home</Link></li>
-        <li> <Link to='/about'>About</Link></li>
-        <li> <Link to='/pricing'>Pricing</Link></li>
+        <Link to='/door1'>
+          <img src="http://www.clipartkid.com/images/140/door-clipart-black-and-white-clipart-panda-free-clipart-images-MdvRUG-clipart.gif" alt="door1"/></Link>
+        
+
+        <Link to='/door2'>
+          <img src="http://www.clipartkid.com/images/140/door-clipart-black-and-white-clipart-panda-free-clipart-images-MdvRUG-clipart.gif" alt="door2"/></Link>
+        
+
+        <Link to='/door3'>
+        <img src="http://www.clipartkid.com/images/140/door-clipart-black-and-white-clipart-panda-free-clipart-images-MdvRUG-clipart.gif" alt="door3"
+        /></Link>
+        
       </ul>
       {this.props.children}
       </div>
