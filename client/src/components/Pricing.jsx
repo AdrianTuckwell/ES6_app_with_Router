@@ -13,5 +13,5 @@ class Pricing extends React.Component{
   
 }
 
-module.exports = Pricing;
+export default Pricing;
 
